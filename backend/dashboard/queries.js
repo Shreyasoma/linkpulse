@@ -32,12 +32,15 @@ const GET_RECENT_LINKS = `
         l.id,
         l.title,
         l.short_code,
+        l.original_url,
         COUNT(c.id) AS clicks
     FROM links l
     LEFT JOIN clicks c
     ON l.id = c.link_id
     WHERE l.user_id = $1
-    GROUP BY l.id
+    GROUP BY
+        l.id,
+        l.original_url
     ORDER BY l.created_at DESC
     LIMIT 5;
 `;

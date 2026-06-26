@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    LinkPulse Dashboard
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="./css/dashboard.css"
+  >
+</head>
+
+<body>
+
+  <header class="navbar">
+
+    <div class="logo">
+      LinkPulse
+    </div>
+
+    <nav>
+
+      <a href="./dashboard.html">
+        Dashboard
+      </a>
+
+      <a href="./create-link.html">
+        Create Link
+      </a>
+
+      <button
+        id="logout-btn"
+        class="nav-logout"
+      >
+        Logout
+      </button>
+
+    </nav>
+
+  </header>
+
+  <div class="container">
+
+    <div class="stats">
+
+      <div class="card">
+        <h3>Total Links</h3>
+        <p id="total-links">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Total Clicks</h3>
+        <p id="total-clicks">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Average Clicks</h3>
+        <p id="avg-clicks">0</p>
+      </div>
+
+    </div>
+
+    <div class="section">
+
+      <h2>
+        Top Performing Link
+      </h2>
+
+      <p id="top-link">
+        No data available
+      </p>
+
+    </div>
+
+    <div class="section">
+
+      <h2>
+        Recent Links
+      </h2>
+
+      <div class="table-controls">
+
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search links..."
+        />
+
+      </div>
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Short URL</th>
+            <th>Original URL</th>
+            <th>Clicks</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="recent-links">
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+  <div id="toast"></div>
+
+  <footer class="footer">
+
+    <p>
+      © 2026 LinkPulse
+    </p>
+
+  </footer>
+
+  <script src="./js/dashboard.js"></script>
+
+</body>
+</html>

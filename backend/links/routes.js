@@ -18,6 +18,8 @@ router.post('/', authMiddleware, createLinkRules, createLink);
 
 router.get('/', authMiddleware, getLinks);
 
+router.get('/analytics/:id', authMiddleware, getAnalytics);
+
 router.get('/:id', authMiddleware, getLinkById);
 
 router.put('/:id', authMiddleware, updateLink);
@@ -26,6 +28,6 @@ router.delete('/:id', authMiddleware, deleteLink);
 
 router.get('/:shortCode', redirectToOriginalUrl);
 
-router.get('/analytics/:id', authMiddleware, getAnalytics);
+router.get('/:shortCode', redirectToOriginalUrl);
 
 module.exports = router;

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Create Link - LinkPulse</title>
+
+  <link rel="stylesheet" href="./css/create-link.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="navbar">
+
+  <div class="logo">
+    LinkPulse
+  </div>
+
+  <nav>
+    <a href="./dashboard.html">
+      Dashboard
+    </a>
+
+    <a href="./create-link.html">
+      Create Link
+    </a>
+
+    <button id="logout-btn">
+      Logout
+    </button>
+  </nav>
+
+</header>
+    <div class="card">
+
+      <h2>Create Short Link</h2>
+
+      <form id="create-link-form">
+
+        <input
+          type="text"
+          id="title"
+          placeholder="Title (Optional)"
+        >
+
+        <input
+          type="url"
+          id="original-url"
+          placeholder="Enter URL"
+          required
+        >
+
+        <button type="submit">
+          Create Link
+        </button>
+
+      </form>
+
+      <p id="message"></p>
+
+      <div id="result"></div>
+
+    </div>
+
+  </div>
+  <footer class="footer">
+  <p>© 2026 LinkPulse</p>
+</footer>
+
+  <script src="./js/create-link.js"></script>
+
+</body>
+</html>

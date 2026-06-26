@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Analytics</title>
+
+  <link
+    rel="stylesheet"
+    href="./css/analytics.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="navbar">
+
+  <div class="logo">
+    LinkPulse
+  </div>
+
+  <nav>
+    <a href="./dashboard.html">
+      Dashboard
+    </a>
+
+    <a href="./create-link.html">
+      Create Link
+    </a>
+
+    <button id="logout-btn">
+      Logout
+    </button>
+  </nav>
+
+</header>
+
+    <div class="card">
+
+      <h2>Total Clicks</h2>
+
+      <p id="total-clicks">
+        Loading...
+      </p>
+
+    </div>
+
+<div class="card">
+
+  <h2>Daily Clicks</h2>
+
+<canvas
+id="daily-chart"
+
+> </canvas>
+
+</div>
+
+
+    <div class="card">
+
+  <h2>Traffic Sources</h2>
+
+<canvas
+ id="referrer-chart"> </canvas>
+
+</div>
+
+
+  </div>
+  <footer class="footer">
+  <p>© 2026 LinkPulse</p>
+</footer>
+
+  <script src="./js/analytics.js"></script>
+
+</body>
+</html>
